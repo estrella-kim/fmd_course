@@ -1,0 +1,19 @@
+{
+  "name": "fmd3th",
+  "version": "1.0.0",
+  "description": "",
+  "main": "second_class.js",
+  "dependencies": {
+    "create-react-app": "^1.4.3",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,12 @@
+<html>
+<input type="test" id="test">
+<script>
+    var test = document.getElementById('test');
+    //document.cookie="test=123123";
+
+    console.log(document.cookie.split('=')[1])
+
+   test.setAttribute('value', document.cookie.split('=')[1])
+
+</script>
+</html>
