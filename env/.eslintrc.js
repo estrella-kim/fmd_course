@@ -4,7 +4,8 @@ module.exports = {
         "ecmaVersion" : 6
     },
     "env" : {
-        "browser" : true
+        "browser" : true,
+        "node": true
     },
     "rules" : {
         "padded-blocks": 1,
