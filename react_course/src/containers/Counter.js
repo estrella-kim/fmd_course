@@ -46,7 +46,7 @@ class Counter extends React.Component{
                 <button disabled={!this.state.number} onClick={() => this.decrease()}>감소</button>
                 <div > { this.state.number<=0 &&  '- 0미만으로는 내려갈수없어요.'}</div>
                 {
-                    this.state.nmber <= 0 && <div>0 미만으로는 내려갈 수 없습니다.</div> //어떤 조건일 때에만 이걸 해라라는 걸 할때는 && 혹은 ||
+                    this.state.number <= 0 && <div>0 미만으로는 내려갈 수 없습니다.</div> //어떤 조건일 때에만 이걸 해라라는 걸 할때는 && 혹은 ||
                 }
             </div>
 
