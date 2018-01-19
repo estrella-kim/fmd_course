@@ -8,7 +8,7 @@ module.exports = {
         "node": true
     },
     "rules" : {
-        "padded-blocks": 1,
-        "no-console" : 1
+        "padded-blocks": 0,
+        "no-console" : 0
     }
 };

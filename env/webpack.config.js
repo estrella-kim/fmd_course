@@ -1,16 +1,22 @@
 const path = require('path');
 
 module.exports = {
-    entry : './src/index.js',
+    entry : './src',
     output : {
         path : path.resolve(__dirname, './public'),
         filename : 'index.bundle.js'
     },
-    modules : {
+    module : {
         rules : [
             {
-                test : /\.js/
-
+                test : /\.js$/,
+                exclude : /node_modules/,
+                loader : 'babel-loader'
+            },
+            {
+                test : /\.js$/,
+                exclude : /node_mdules/,
+                loader : 'eslint-loader'
             }
         ]
     }
