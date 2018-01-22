@@ -1,9 +1,1 @@
-class Car {
-
-    excel() {
-        console.log('excel')
-    }
-}
-
-let avante = new Car;
-avante.excel();
+var React = require('react');

@@ -1,7 +1,11 @@
 module.exports = {
-    "extends" : "eslint:recommended",
+    "extends" : ["eslint:recommended","plugin:react/recommended"],
     "parserOptions": {
-        "ecmaVersion" : 6
+        "ecmaVersion" : 6,
+        "ecmaFeatures" : {
+            "jsx": true
+        },
+        "sourceType" : "module"
     },
     "env" : {
         "browser" : true,
@@ -9,6 +13,12 @@ module.exports = {
     },
     "rules" : {
         "padded-blocks": 0,
-        "no-console" : 0
-    }
+        "no-console" : 0,
+        "no-unused-vars" : 1,
+        "brace-style": 0
+    },
+    "plugins" : [
+        "react"
+        /*new webpack.optimize.UglifyJsPlugin()*/
+    ]
 };
