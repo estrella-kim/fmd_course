@@ -1,6 +1,11 @@
-class board {
-    test() {
-        console.log('test success')
+import React from 'react';
+
+export default class Board extends React.Component{
+    render() {
+        return (
+            <div>
+                this is board
+            </div>
+        )
     }
 }
-board.test();

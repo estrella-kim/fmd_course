@@ -4,7 +4,7 @@
   "description": "review on env project",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/.bin/babel",
+    "start": "webpack-dev-server --inline --hot",
     "test": "./node_modules/.bin/eslint"
   },
   "author": "estrella-kim",
@@ -13,6 +13,7 @@
     "babel-cli": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-recommended": "^2.0.0",
@@ -25,7 +26,8 @@
     "eslint-plugin-react": "^7.5.1",
     "eslint-plugin-standard": "^3.0.1",
     "live-server": "^1.2.0",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.1"
   },
   "dependencies": {
     "react": "^16.2.0",
