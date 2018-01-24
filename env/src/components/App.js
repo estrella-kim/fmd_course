@@ -1,7 +1,9 @@
 import './App.css';
 import React from 'react';
-import { Board } from './index';
+import { Buttons } from './index';
 import { Input } from 'antd';
+import 'antd/dist/antd.css';
+
 export class App extends React.Component{
     constructor() {
         super();
@@ -21,7 +23,7 @@ export class App extends React.Component{
 
     recordList(e) {
         e.preventDefault();//form 태그의 preventDefault 는 제출 후의 페이지 갱신을 막는다.
-        this.setState( state => {
+        this.setState( (state) => {
             return {
                 list: [...state.list, state.text],
                 text: ''
@@ -33,7 +35,7 @@ export class App extends React.Component{
 
         return (
             <div>
-                <Board/>
+                <Buttons/>
                 <div> { this.state.textLength}/ 15 </div>
                 { this.state.textLength == 15  && <div>15자 이상을 넘을 수 없습니다.</div>}
             <form onSubmit={(e)=>this.recordList(e)}>
